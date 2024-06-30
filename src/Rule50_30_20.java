@@ -1,6 +1,6 @@
 import java.util.Scanner;
 
-public class Main {
+public class Rule50_30_20 {
     public static void main(String[] args) {
 
         //  50: Needs

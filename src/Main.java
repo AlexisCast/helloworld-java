@@ -2,13 +2,20 @@ import java.util.Scanner;
 
 public class Main {
     public static void main(String[] args) {
-        System.out.println("Hello world!");
-
-        System.out.println("Type something in the keyboard: ");
 
         Scanner keyboardInput = new Scanner(System.in);
-        String variable = keyboardInput.nextLine();
 
-        System.out.println("Your variable: " + variable);
+        System.out.println("Enter the price to calculate with 21% of IVA");
+
+        float price = keyboardInput.nextFloat();
+
+        float iva = 21;
+
+        float ivaOfPrice = (iva * 50) / 100;
+
+        float finalPrice = price - ivaOfPrice;
+
+        System.out.println("Final price: $" + finalPrice);
+        
     }
 }
